@@ -8,7 +8,7 @@ from airflow.providers.google.cloud.operators.bigquery import BigQueryInsertJobO
 PROJECT_ID = "project-b2d1202e-c674-4674-a8a"
 REGION = "us-central1"
 CLUSTER_NAME = "my-hospital-dp-cluster"
-COMPOSER_BUCKET = "us-central1-hospital-rcm-co-2c1f148b-bucket"
+COMPOSER_BUCKET = "us-central1-hospital-rcm-co-cc2246f3-bucket"
 LANDING_BRONZE_SRC = f"gs://{COMPOSER_BUCKET}/data/DataProcessing/Landing_to_Bronze.sql"
 BRONZE_SILVER_SRC = f"gs://{COMPOSER_BUCKET}/data/DataProcessing/Bronze_to_Silver.sql"
 SILVER_GOLD_SRC = f"gs://{COMPOSER_BUCKET}/data/DataProcessing/Silver_to_Gold.sql"

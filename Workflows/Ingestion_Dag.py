@@ -74,30 +74,30 @@ with DAG(
 
     ingestion_task_a = DataprocSubmitJobOperator(
         task_id="ingestion_task_a",
+        job=JOB_DBA_LANDING,
         project_id=PROJECT_ID,
-        region=REGION,
-        cluster_name=CLUSTER_NAME
+        region=REGION
     )
 
     ingestion_task_b = DataprocSubmitJobOperator(
         task_id="ingestion_task_b",
+        job=JOB_DBB_LANDING,
         project_id=PROJECT_ID,
-        region=REGION,
-        cluster_name=CLUSTER_NAME
+        region=REGION
     )
 
     ingestion_task_claims = DataprocSubmitJobOperator(
         task_id="ingestion_task_claims",
+        job=JOB_CLAIMS_LANDING,
         project_id=PROJECT_ID,
-        region=REGION,
-        cluster_name=CLUSTER_NAME
+        region=REGION
     )
 
     ingestion_task_cpt = DataprocSubmitJobOperator(
         task_id="ingestion_task_cpt",
+        job=JOB_CPT_LANDING,
         project_id=PROJECT_ID,
-        region=REGION,
-        cluster_name=CLUSTER_NAME
+        region=REGION
     )
 
     stop_cluster = DataprocStopClusterOperator(
