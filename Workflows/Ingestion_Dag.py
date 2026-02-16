@@ -12,7 +12,7 @@ from airflow.providers.google.cloud.operators.dataproc import (
 PROJECT_ID = "project-b2d1202e-c674-4674-a8a"
 REGION = "us-central1"
 CLUSTER_NAME = "my-hospital-dp-cluster"
-COMPOSER_BUCKET = "us-central1-hospital-rcm-co-2c1f148b-bucket"
+COMPOSER_BUCKET = "us-central1-hospital-rcm-co-cc2246f3-bucket"
 JOB_DBA_LANDING_SRC = f"gs://{COMPOSER_BUCKET}/data/Ingestion/HospitalAtoLanding.py"
 JOB_DBB_LANDING_SRC = f"gs//{COMPOSER_BUCKET}/data/Ingestion/HospitalBtoLanding.py"
 JOB_CLAIMS_LANDING_SRC = f"gs://{COMPOSER_BUCKET}/data/Ingestion/ClaimsToBronze.py"
