@@ -53,7 +53,7 @@ FROM
 		ProviderID as srcProviderID,
 		'hos_b' as hospital_source
 	FROM
-		`project-b2d1202e-c674-4674-a8a.bronze_dataset.providers_hb`) AS temp
+		`project-b2d1202e-c674-4674-a8a.bronze_dataset.providers_hb`) AS temp;
 		
 ------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------	
