@@ -14,7 +14,7 @@ REGION = "us-central1"
 CLUSTER_NAME = "my-hospital-dp-cluster"
 COMPOSER_BUCKET = "us-central1-hospital-rcm-co-cc2246f3-bucket"
 JOB_DBA_LANDING_SRC = f"gs://{COMPOSER_BUCKET}/data/Ingestion/HospitalAtoLanding.py"
-JOB_DBB_LANDING_SRC = f"gs//{COMPOSER_BUCKET}/data/Ingestion/HospitalBtoLanding.py"
+JOB_DBB_LANDING_SRC = f"gs://{COMPOSER_BUCKET}/data/Ingestion/HospitalBtoLanding.py"
 JOB_CLAIMS_LANDING_SRC = f"gs://{COMPOSER_BUCKET}/data/Ingestion/ClaimsToBronze.py"
 JOB_CPT_LANDING_SRC = f"gs://{COMPOSER_BUCKET}/data/Ingestion/CptCodesToBronze.py"
 
