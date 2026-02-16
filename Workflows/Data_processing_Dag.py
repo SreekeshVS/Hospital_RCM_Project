@@ -4,8 +4,6 @@ from airflow.utils import dates
 from datetime import datetime, timedelta
 from airflow.providers.google.cloud.operators.bigquery import BigQueryInsertJobOperator
 
-from Workflows.Ingestion_Dag import CLUSTER_NAME, COMPOSER_BUCKET
-
 #airflow Configurations
 PROJECT_ID = "project-b2d1202e-c674-4674-a8a"
 REGION = "us-central1"
