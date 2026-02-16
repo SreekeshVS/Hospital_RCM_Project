@@ -106,7 +106,7 @@ LEFT JOIN
 LEFT JOIN
 	project-b2d1202e-c674-4674-a8a.silver_dataset.transactions t ON p.srcPatientID = t.PatientID
 LEFT JOIN
-	project-b2d1202e-c674-4674-a8a.silver_dataset.claims c ON p.srcPatientID = c.PatientID
+	project-b2d1202e-c674-4674-a8a.silver_dataset.claims c ON p.srcPatientID = c.PatientID;
 
 
 
@@ -169,7 +169,7 @@ SELECT
 	*,
 	round((ApprovedClaims / totalClaims * 100), 2) as Claims_Success_Rate
 FROM
-	Claims_details
+	Claims_details;
 	
 ---------------------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -263,7 +263,7 @@ select
   round(TotalAmountBilled - TotalAmountReceived,2) as Outstanding_Balance,
   round(Approved_Claims / TotalClaims * 100, 2) as Claims_Ratio
 FROM
-	Revenue_details
+	Revenue_details;
 	
 
 
